@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/taotao.iml" filepath="$PROJECT_DIR$/taotao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaocommon/taotaocommon.iml" filepath="$PROJECT_DIR$/taotaocommon/taotaocommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanager/taotaomanager.iml" filepath="$PROJECT_DIR$/taotaomanager/taotaomanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanagerdao/taotaomanagerdao.iml" filepath="$PROJECT_DIR$/taotaomanagerdao/taotaomanagerdao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanagerinterface/taotaomanagerinterface.iml" filepath="$PROJECT_DIR$/taotaomanagerinterface/taotaomanagerinterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanagerpojo/taotaomanagerpojo.iml" filepath="$PROJECT_DIR$/taotaomanagerpojo/taotaomanagerpojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanagerservice/taotaomanagerservice.iml" filepath="$PROJECT_DIR$/taotaomanagerservice/taotaomanagerservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanagerweb/taotaomanagerweb.iml" filepath="$PROJECT_DIR$/taotaomanagerweb/taotaomanagerweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaoparent/taotaoparent.iml" filepath="$PROJECT_DIR$/taotaoparent/taotaoparent.iml" />
+    </modules>
+  </component>
+</project>
