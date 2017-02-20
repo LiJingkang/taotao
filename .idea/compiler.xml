@@ -6,24 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="taotaocommon" />
-        <module name="taotaomanagerdao" />
-        <module name="taotaomanagerinterface" />
-        <module name="taotaomanagerpojo" />
-        <module name="taotaomanagerservice" />
-        <module name="taotaomanagerweb" />
+        <module name="taotao-common" />
+        <module name="taotao-manager-dao" />
+        <module name="taotao-manager-interface" />
+        <module name="taotao-manager-pojo" />
+        <module name="taotao-manager-service" />
+        <module name="taotao-manager-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="taotao" target="1.5" />
-      <module name="taotaocommon" target="1.8" />
-      <module name="taotaomanager" target="1.8" />
-      <module name="taotaomanagerdao" target="1.8" />
-      <module name="taotaomanagerinterface" target="1.8" />
-      <module name="taotaomanagerpojo" target="1.8" />
-      <module name="taotaomanagerservice" target="1.8" />
-      <module name="taotaomanagerweb" target="1.8" />
-      <module name="taotaoparent" target="1.8" />
+      <module name="taotao-common" target="1.8" />
+      <module name="taotao-manager" target="1.8" />
+      <module name="taotao-manager-dao" target="1.8" />
+      <module name="taotao-manager-interface" target="1.8" />
+      <module name="taotao-manager-pojo" target="1.8" />
+      <module name="taotao-manager-service" target="1.8" />
+      <module name="taotao-manager-web" target="1.8" />
+      <module name="taotao-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
