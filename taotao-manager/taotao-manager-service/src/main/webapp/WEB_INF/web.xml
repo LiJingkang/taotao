@@ -9,4 +9,15 @@
     </welcome-file-list>
 
 
+    <!-- 1 -->
+    <!-- 初始化 Spring 容器-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <!-- 服务层 只配了一个 Spring 容器。 父容器。 把dao Service 都放在这里面-->
+        <param-value>classpath:spring/applicationContext-*.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
 </web-app>
