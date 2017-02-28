@@ -21,7 +21,7 @@
   <component name="ProjectResources">
     <resource url="http://code.alibabatech.com/schema/dubbo/dubbo.xsd" location="D:/Program/Java/xsd/dubbo.xsd" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" project-jdk-name="1.8_111_x64" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

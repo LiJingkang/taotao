@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class ItemController {
 
-//    @Autowired
+    @Autowired
     private ItemService itemService;
     @RequestMapping("/item/{itemId}")
     @ResponseBody
@@ -24,5 +24,12 @@ public class ItemController {
         TbItem tbItem = itemService.getItemById(itemId) ;
         return tbItem;
 
+    }
+
+
+    @RequestMapping("/item/Skying")
+    @ResponseBody
+    public String getId(){
+        return "Skying";
     }
 }

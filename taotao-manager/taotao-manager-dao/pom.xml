@@ -48,4 +48,23 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <!-- 在编译的时候复制下面的文件。 相当于修改默认配置 -->
+        <!-- 如果不写，只默认复制resources里面的xml文件。将会提示找不到Mapper.xml文件 -->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <!-- <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource> -->
+        </resources>
+    </build>
+
 </project>

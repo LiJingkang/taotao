@@ -1,6 +1,10 @@
 package com.taotao.pojo;
 
-public class TbOrderItem {
+import java.io.Serializable;
+
+public class TbOrderItem implements Serializable{
+    private String id;
+
     private String itemId;
 
     private String orderId;
@@ -14,6 +18,14 @@ public class TbOrderItem {
     private Long totalFee;
 
     private String picPath;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id == null ? null : id.trim();
+    }
 
     public String getItemId() {
         return itemId;
