@@ -105,25 +105,25 @@ var TT = TAOTAO = {
     // 初始化选择类目组件
     initItemCat : function(data){
     	$(".selectItemCat").each(function(i,e){
-    		var _ele = $(e);
+    		var _ele = $(e); // 转换为 jQ对象
     		if(data && data.cid){
     			_ele.after("<span style='margin-left:10px;'>"+data.cid+"</span>");
     		}else{
     			_ele.after("<span style='margin-left:10px;'></span>");
     		}
-    		_ele.unbind('click').click(function(){
+    		_ele.unbind('click').click(function(){ // 先解绑再绑定
     			$("<div>").css({padding:"5px"}).html("<ul>")
-    			.window({
+    			.window({ // 打开一个窗口
     				width:'500',
     			    height:"450",
-    			    modal:true,
+    			    modal:true, // 模态 后面的模版
     			    closed:true,
     			    iconCls:'icon-save',
     			    title:'选择类目',
-    			    onOpen : function(){
+    			    onOpen : function(){ // onOpen 事件驱动。
     			    	var _win = this;
-    			    	$("ul",_win).tree({
-    			    		url:'/item/cat/list',
+    			    	$("ul",_win).tree({ // 商品分类
+    			    		url:'/item/cat/list', // 使用这个url来请求数据
     			    		animate:true,
     			    		onClick : function(node){
     			    			if($(this).tree("isLeaf",node.target)){

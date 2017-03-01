@@ -43,6 +43,8 @@
     <dubbo:application name="taotao-manager-web"/>
     <dubbo:registry protocol="zookeeper" address="192.168.56.2:2181"/>
     <dubbo:reference interface="com.taotao.service.ItemService" id="itemService" />
+    <!-- 添加一个新的服务 -->
+    <dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" />
 
 
 </beans>
