@@ -26,3 +26,5 @@
 127.0.0.1 - - [01/Mar/2017:09:41:19 +0800] "GET /content/query/list?categoryId=0&page=1&rows=20 HTTP/1.1" 404 949 http-bio-8081-exec-5 1
 127.0.0.1 - - [01/Mar/2017:09:42:23 +0800] "GET /item-list?_=1488332199254 HTTP/1.1" 200 6784 http-bio-8081-exec-10 3
 127.0.0.1 - - [01/Mar/2017:09:42:23 +0800] "GET /item/list?page=1&rows=30 HTTP/1.1" 400 968 http-bio-8081-exec-7 4
+127.0.0.1 - - [01/Mar/2017:09:46:13 +0800] "GET / HTTP/1.1" 200 2475 http-bio-8081-exec-4 57
+127.0.0.1 - - [01/Mar/2017:09:46:13 +0800] "GET /favicon.ico HTTP/1.1" 404 997 http-bio-8081-exec-6 4
