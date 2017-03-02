@@ -45,5 +45,4 @@
         <!-- 网页的伪静态化 -->
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
-
 </web-app>
