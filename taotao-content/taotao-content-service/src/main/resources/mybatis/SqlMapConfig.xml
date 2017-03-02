@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+        <!-- 1 -->
+        <!-- 配置分页插件 -->
+        <plugins>
+            <!-- 本质上是一个拦截器，在输出sql语句的时候给他添加上 limit -->
+            <plugin interceptor="com.github.pagehelper.PageHelper">
+                <!-- dialect 配置数据库的方言-->
+                <!-- 设置数据库类型-->
+                <property name="dialect" value="mysql"></property>
+            </plugin>
+        </plugins>
+
+</configuration>

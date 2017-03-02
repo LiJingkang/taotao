@@ -8,7 +8,6 @@
 	        <tr>
 	            <td>商品类目:</td>
 	            <td>
-					<%-- 绑定的在哪里。 class 绑定。 selectItemCat 找到一个common.js 找到在哪里引用的--%>
 	            	<a href="javascript:void(0)" class="easyui-linkbutton selectItemCat">选择类目</a>
 	            	<input type="hidden" name="cid" style="width: 280px;"></input>
 	            </td>
@@ -67,12 +66,10 @@
 <script type="text/javascript">
 	var itemAddEditor ;
 	//页面初始化完毕后执行此方法
-	// 加载完成之后
 	$(function(){
 		//创建富文本编辑器
 		itemAddEditor = TAOTAO.createEditor("#itemAddForm [name=desc]");
 		//初始化类目选择和图片上传器
-		// TAOTAO 是一个 js 对象。
 		TAOTAO.init({fun:function(node){
 			//根据商品的分类id取商品 的规格模板，生成规格信息。第四天内容。
 			//TAOTAO.changeItemParam(node, "itemAddForm");
@@ -114,6 +111,7 @@
 		*/
 		//ajax的post方式提交表单
 		//$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串
+		alert($("#itemAddForm").serialize());
 		$.post("/item/save",$("#itemAddForm").serialize(), function(data){
 			if(data.status == 200){
 				$.messager.alert('提示','新增商品成功!');
