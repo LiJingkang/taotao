@@ -93,6 +93,7 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
+
         <!-- 添加FastDFS 客户端的引用 -->
         <!-- 图片服务器 -->
         <dependency>
@@ -106,6 +107,12 @@
             <artifactId>junit</artifactId>
         </dependency>
 
+        <!-- 文件上传组件 -->
+        <!-- 同时要配置解析器 -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

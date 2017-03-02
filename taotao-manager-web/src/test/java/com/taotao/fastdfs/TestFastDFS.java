@@ -1,5 +1,6 @@
 package com.taotao.fastdfs;
 
+import com.taotao.utils.FastDFSClient;
 import org.csource.fastdfs.*;
 import org.junit.Test;
 
@@ -30,5 +31,13 @@ public class TestFastDFS {
 		for (String string : strings) {
 			System.out.print(string);
 		}
+	}
+
+	// 使用封装的工具类
+	@Test
+	public void testFastDfsClient() throws Exception {
+		FastDFSClient fastDFSClient = new FastDFSClient("E:/IDEA/taotao/taotao-manager-web/src/main/resources/resource/client.conf");
+		String string = fastDFSClient.uploadFile("D:/2.jpg");
+		System.out.print(string);
 	}
 }
