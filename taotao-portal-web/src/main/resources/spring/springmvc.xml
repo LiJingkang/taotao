@@ -35,9 +35,7 @@
     <!-- 地址就是Service 服务配置的地址。 -->
     <dubbo:application name="taotao-portal-web"/>
     <dubbo:registry protocol="zookeeper" address="192.168.56.2:2181"/>
-    <!--<dubbo:reference interface="com.taotao.service.ItemService" id="itemService" />-->
-    <!--&lt;!&ndash; 添加一个新的服务 &ndash;&gt;-->
-    <!--<dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" />-->
+    <dubbo:reference interface="com.taotao.content.service.ContentService" id="contentService" />
 
     <!-- 6 -->
     <!-- 加载属性文件 -->
