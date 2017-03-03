@@ -23,7 +23,7 @@
         <tx:attributes>
             <!-- 传播行为 -->
             <!-- REQUIRED 会开启事物。以这些开头的方法开启事务-->
-            <tx:method name="save*" propagation="REQUIRED" />
+            <tx:method name="save*" propagation="REQUIRED"  />
             <tx:method name="insert*" propagation="REQUIRED" />
             <tx:method name="add*" propagation="REQUIRED" />
             <tx:method name="create*" propagation="REQUIRED" />
@@ -40,7 +40,7 @@
     <!-- 切一下 任意的返回值 任意参数的 文件-->
     <aop:config>
         <aop:advisor advice-ref="txAdvice"
-                     pointcut="execution(* com.taotao.service.*.*(..))" />
+                     pointcut="execution(* com.taotao.content.service.*.*(..))" />
     </aop:config>
 
 </beans>

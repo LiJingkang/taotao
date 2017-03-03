@@ -45,6 +45,7 @@
     <dubbo:reference interface="com.taotao.service.ItemService" id="itemService" />
     <!-- 添加一个新的服务 -->
     <dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" />
+    <dubbo:reference interface="com.taotao.content.service.ContentCategoryService" id="contentCategoryService" />
 
     <!-- 5 -->
     <!-- 多媒体解析器 用于图片上传 -->

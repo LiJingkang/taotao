@@ -1,7 +1,16 @@
 package com.taotao.content.service;
 
+import com.taotao.common.pojo.EasyUITreeNode;
+import com.taotao.common.pojo.TaotaoResult;
+
+import java.util.List;
+
 /**
  * Created by Skying on 2017/3/2.
  */
-public class ContentCategoryService {
+public interface ContentCategoryService {
+
+    List<EasyUITreeNode> getContentCategoryList(long parentId);
+
+    TaotaoResult addContentCategory(Long parentId, String name);
 }

@@ -128,7 +128,13 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
+  <!-- insert 原封不动的插入-->
   <insert id="insert" parameterType="com.taotao.pojo.TbContent" >
+    -- keyProperty 主键对应的属性 resultType 返回的属性。 long 别名对应 Long ,order 在之后执行
+    <selectKey keyProperty="id" resultType="long" order="AFTER">
+      -- 主键返回
+      SELECT LAST_INSERT_ID()
+    </selectKey>
     insert into tb_content (id, category_id, title, 
       sub_title, title_desc, url, 
       pic, pic2, created, 
@@ -138,7 +144,13 @@
       #{pic,jdbcType=VARCHAR}, #{pic2,jdbcType=VARCHAR}, #{created,jdbcType=TIMESTAMP}, 
       #{updated,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR})
   </insert>
+  <!-- insertSelective 不为空才插入-->
   <insert id="insertSelective" parameterType="com.taotao.pojo.TbContent" >
+    -- keyProperty 主键对应的属性 resultType 返回的属性。 long 别名对应 Long ,order 在之后执行
+    <selectKey keyProperty="id" resultType="long" order="AFTER">
+      -- 主键返回
+      SELECT LAST_INSERT_ID()
+    </selectKey>
     insert into tb_content
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >

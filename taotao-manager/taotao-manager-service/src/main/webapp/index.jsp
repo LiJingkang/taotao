@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>
-    Hello taotao
+    taotao-manager-web
 </h1>
 
 </body>
