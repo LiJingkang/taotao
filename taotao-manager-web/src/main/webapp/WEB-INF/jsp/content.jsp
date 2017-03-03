@@ -6,6 +6,8 @@
             </ul>
         </div>
         <div data-options="region:'center'" style="padding:5px">
+			<%-- easyui-datagrid 内容列表 --%>
+			<%-- 定义了一个 toolbar --%>
             <table class="easyui-datagrid" id="contentList" data-options="toolbar:contentListToolbar,singleSelect:false,collapsible:true,pagination:true,method:'get',pageSize:20,url:'/content/query/list',queryParams:{categoryId:0}">
 		    <thead>
 		        <tr>
@@ -25,13 +27,18 @@
     </div>
 </div>
 <script type="text/javascript">
+<%-- 初始化完成以后执行这个方法 --%>
 $(function(){
+    // 拿到数据
 	var tree = $("#contentCategoryTree");
 	var datagrid = $("#contentList");
 	tree.tree({
+	    // 绑定onClick事件
 		onClick : function(node){
 			if(tree.tree("isLeaf",node.target)){
+			    // reload 刷新
 				datagrid.datagrid('reload', {
+				    // 将id 传给 categoryId
 					categoryId :node.id
 		        });
 			}
@@ -47,6 +54,7 @@ var contentListToolbar = [{
     		$.messager.alert('提示','新增内容必须选择一个内容分类!');
     		return ;
     	}
+    	// TT = taotao ，定义的。
     	TT.createWindow({
 			url : "/content-add"
 		}); 

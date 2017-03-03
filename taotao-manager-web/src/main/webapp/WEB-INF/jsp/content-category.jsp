@@ -65,8 +65,9 @@ function menuHandler(item){ // item 点击了拿一个项
 		var _node = tree.tree('find',0); // 在tree里面找id 为0 的结点
 		tree.tree("select",_node.target).tree('beginEdit',_node.target); // 选中当前结点，变为可编辑状态
 	}else if(item.name === "rename"){
-		tree.tree('beginEdit',node.target);
+		tree.tree('beginEdit',node.target); // 改名字 光标离开。触发事件 onAfterEdit
 	}else if(item.name === "delete"){
+	    // 弹出一个消息窗口
 		$.messager.confirm('确认','确定删除名为 '+node.text+' 的分类吗？',function(r){
 			if(r){
 				$.post("/content/category/delete/",{id:node.id},function(){
