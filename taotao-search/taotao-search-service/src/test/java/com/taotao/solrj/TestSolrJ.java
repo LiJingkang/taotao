@@ -44,8 +44,10 @@ public class TestSolrJ {
     // 根据 查询删除
     public void deleteDocumentByQuery() throws Exception {
         SolrServer solrServer = new HttpSolrServer("http://192.168.56.2:8080/solr");
-        solrServer.deleteByQuery("123");
+        solrServer.deleteByQuery("item_title:测试商品3");
         // 提交
         solrServer.commit();
     }
+
+    // 更新就是添加
 }
