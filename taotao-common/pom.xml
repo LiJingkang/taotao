@@ -9,10 +9,7 @@
         <relativePath>../taotao-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
-    <modules>
-        <module>../taotao-search-web</module>
-    </modules>
+    <packaging>jar</packaging>
 
     <artifactId>taotao-common</artifactId>
 
