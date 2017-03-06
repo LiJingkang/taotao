@@ -11,5 +11,4 @@ public interface SearchItemMapper {
 
     // 手写 Mapper ，但是还是需要一个映射文件。
     List<SearchItem> getItemList();
-
 }
