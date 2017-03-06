@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%-- 引入的外部的js --%>
 <script type="text/javascript" src="/js/base-v1.js" charset="utf-8"></script>
 <!--shortcut start-->
 <jsp:include page="shortcut.jsp" />
@@ -13,6 +14,7 @@
 				<ul id="shelper" class="hide">
 				</ul>
 				<div class="form">
+                    <%-- 当搜索回车的时候 13 回车键的键值。 调用search('key') 这个方法，把参数传过去 --%>
 					<input type="text" class="text" accesskey="s" id="key" autocomplete="off" onkeydown="javascript:if(event.keyCode==13) search('key');">
 					<input type="button" value="搜索" class="button" onclick="search('key');return false;" clstag="homepage|keycount|home2013|03a">
 				</div>
