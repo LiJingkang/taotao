@@ -10,6 +10,8 @@ public class SearchResult implements Serializable{
 
     private int totalPages;
 
+    private long recordCount;
+
     private List<SearchItem> itemList;
 
     public int getTotalPages() {
@@ -26,5 +28,13 @@ public class SearchResult implements Serializable{
 
     public void setItemList(List<SearchItem> itemList) {
         this.itemList = itemList;
+    }
+
+    public long getRecordCount() {
+        return recordCount;
+    }
+
+    public void setRecordCount(long recordCount) {
+        this.recordCount = recordCount;
     }
 }

@@ -21,7 +21,7 @@
 
     <!-- 1 -->
     <!-- 配置包扫描器，扫描所有带@Service注解的类 -->
-    <context:component-scan base-package="com.taotao.search.service"/>
+    <context:component-scan base-package="com.taotao.search"/>
 
     <!-- 2 -->
     <!-- 发布dubbo服务 -->
