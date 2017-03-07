@@ -22,17 +22,13 @@ import java.util.Map;
  * Created by Skying on 2017/3/6.
  */
 
-/**
- * 查询索引库商品dao
- * <p>Title: SearchDao</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.cn</p>
- * @version 1.0
- */
 @Repository
 public class SearchDao {
 
     @Autowired
+    // 注入的是一个抽象类 是HttpSolrService 和 CloudSolrServer 的父类。
+    // 我们在切换不同Solr 的时候。不需要改变这里，直接修改配置文件就可以了
+    // 根据类型注入的。如果有两个实现类 就会注入失败
     private SolrServer solrServer;
 
     public SearchResult search(SolrQuery query) throws Exception{
