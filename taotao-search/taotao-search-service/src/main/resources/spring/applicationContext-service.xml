@@ -36,4 +36,6 @@
     <!-- 声明需要暴露的服务接口 -->
     <!-- ref 引用名，扫描到的@Service 首字母小写-->
     <dubbo:service interface="com.taotao.search.service.SearchItemService" ref="searchItemServiceImpl" timeout="300000"/>
+    <dubbo:service interface="com.taotao.search.service.SearchService" ref="searchServiceImpl" timeout="300000"/>
+
 </beans>

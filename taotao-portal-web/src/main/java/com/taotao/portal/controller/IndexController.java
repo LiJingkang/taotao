@@ -35,8 +35,6 @@ public class IndexController {
 
     @Autowired
     private ContentService contentService;
-
-
     // 后台不拦截 / 只拦截 .html
     // 当寻找index.html的时候没有找到，会调用这个方法。
     @RequestMapping("/index")
