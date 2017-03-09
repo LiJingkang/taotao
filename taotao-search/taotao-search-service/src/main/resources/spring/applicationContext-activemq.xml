@@ -44,4 +44,13 @@
         <property name="destination" ref="test-queue" />
         <property name="messageListener" ref="myMessageListener" />
     </bean>
+
+    <!-- 配置另一个接收者 -->
+    <bean id="itemAddMessageListener" class="com.taotao.search.listener.ItemAddMessageListener" />
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory" />
+        <!-- 和 Destionation 中配置的相同 -->
+        <property name="destination" ref="itemAddtopic" />
+        <property name="messageListener" ref="itemAddMessageListener" />
+    </bean>
 </beans>
