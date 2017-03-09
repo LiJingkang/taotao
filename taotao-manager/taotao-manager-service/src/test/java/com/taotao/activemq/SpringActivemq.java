@@ -20,7 +20,7 @@ public class SpringActivemq {
 
     // 使用 jsmTemplate 发送消息
     @Test
-    public void testJmslate() throws Exception {
+    public void testJmsTemplate() throws Exception {
         // 1. 初始化 spring 容器
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-activemq.xml");
         // 2. 从容器中获得 JmsTemplate 对象
