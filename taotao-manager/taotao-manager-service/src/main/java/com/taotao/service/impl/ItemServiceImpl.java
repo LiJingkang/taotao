@@ -94,4 +94,10 @@ public class ItemServiceImpl implements ItemService {
         // 7. 返回结果
         return TaotaoResult.ok();
     }
+
+    @Override
+    public TbItemDesc getItemDescById(long itemId) {
+        TbItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(itemId);
+        return itemDesc;
+    }
 }
